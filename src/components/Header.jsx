@@ -33,7 +33,7 @@ export const Header = ({cart}) => {
                     </tr>
                   </thead>
                   <tbody>
-                    {cart.map( guitar =>{return(              
+                    {cart.map( guitar =>(              
                     <tr key={guitar.id}>
                       <td>
                         <img
@@ -59,22 +59,22 @@ export const Header = ({cart}) => {
                         </button>
                       </td>
                     </tr>
-                    )})}  
-                  </tbody>
-                
+                    ))}  
+                  </tbody>                
                 </table>
 
                 <p className="text-end">
                   Total pagar: <span className="fw-bold">$899</span>
                 </p>
+              )}
                 <button className="btn btn-dark w-100 mt-3 p-2">
                   Vaciar Carrito
                 </button>
+              
               </div>
             </div>
           </nav>
         </div>
       </div>
     </header>
-  );
-};
+  )}
